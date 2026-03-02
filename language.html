@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='styles.css'>
+    <title>Wireframe</title>
+    <style>
+      * {
+        margin: 1;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 2rem;
+      }
+
+      .sections {
+        margin-bottom: 3rem;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Playwrite New Zealand Basic";
+        font-style: normal
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 550;
+        margin-bottom: 2rem;
+      }
+
+      
+      h2 {
+        font-size: 2rem;
+        font-weight:200;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+
+      @font-face{
+        font-family: "Playwrite New Zealand Basic";
+        src: url(fonts/PlaywriteNZBasic-VariableFont_wght.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .flex-container {
+        min-height: 300px;
+      }
+
+      .item {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 80px;
+      }
+
+      .flex-grow-sections {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .flex-grow-sections .item {
+        background-color: rgb(4, 29, 106);
+        border: 2px solid rgb(0, 0, 0);
+        color: white;
+      }
+
+      .flex-grow-sections .grow-1 {
+        flex-grow:1;
+      }
+
+      .flex-grow-sections .grow-2 {
+        flex-grow:2;
+        background-color: rgb(36, 72, 134);
+        border: 2px solid rgb(0, 0, 0);
+      }
+      .topnav {
+        background-color: hsl(208, 54%, 77%);
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        color: #0c2c52;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="language.html">By Language</a>
+        <a href="tm.html">Topic Modeling</a>
+        <a href="about.html">About</a>
+    </div>
+  </head>
+
+  <body>
+    <div class="sections">
+      <h2>Bengali</h2>
+      <div class="flex-container flex-grow-sections">
+        <div class="item grow-2">Poem Title</div>
+        <div class="item grow-1">Author</div>
+        <div class="item grow-1">Translator</div>
+        <div class="item grow-1">Link</div>
+      </div>
+    </div>
+
+    <div class="sections">
+      <h2>Hindi</h2>
+      <div class="flex-container flex-grow-sections">
+        <div class="item grow-2">Poem Title</div>
+        <div class="item grow-1">Author</div>
+        <div class="item grow-1">Translator</div>
+        <div class="item grow-1">Link</div>
+      </div>
+    </div>
+
+    <div class="sections">
+      <h2>Marathi</h2>
+      <div class="flex-container flex-grow-sections">
+        <div class="item grow-2">Poem Title</div>
+        <div class="item grow-1">Author</div>
+        <div class="item grow-1">Translator</div>
+        <div class="item grow-1">Link</div>
+      </div>
+    </div>
+
+    <div class="sections">
+      <h2>Tamil</h2>
+      <div class="flex-container flex-grow-sections">
+        <div class="item grow-2">Poem Title</div>
+        <div class="item grow-1">Author</div>
+        <div class="item grow-1">Translator</div>
+        <div class="item grow-1">Link</div>
+      </div>
+    </div>
+
+   
+  </body>
+</html>
